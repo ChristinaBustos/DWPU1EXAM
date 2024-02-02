@@ -8,6 +8,8 @@
       :current-page="currentPage"
       :fields="fields"
       :sort-by.sync="sortBy"
+      label-sort-asc=""
+      label-sort-desc=""
       :sort-desc.sync="sortDesc"
       :filter="filtro"
       @filtered="onFiltered"

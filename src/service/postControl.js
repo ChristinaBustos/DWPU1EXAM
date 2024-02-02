@@ -11,7 +11,8 @@ const registrarCoche = async (form) => {
   const data = { form };
 
   try {
-    const response = await axios.post(API_URL, data, { headers });
+    const response = await axios.post(API_URL, JSONStringtify(data), { headers });
+    console.log(response);
     return response.data;
   } catch (error) {
     throw error;
